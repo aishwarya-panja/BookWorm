@@ -6,14 +6,15 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 const FreeBook = () => {
-  
   const [book, setBook] = useState([]);
   useEffect(() => {
     const getBook = async () => {
       try {
         const res = await axios.get("http://localhost:4001/book");
-        console.log(res.data);
-        setBook(res.data.filter((data) => data.category === "Free"));
+
+        const data = res.data.filter((data) => data.category === "Free");
+        console.log(data);
+        setBook(data);
       } catch (error) {
         console.log(error);
       }
