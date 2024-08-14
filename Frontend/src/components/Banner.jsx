@@ -1,4 +1,4 @@
-import Books from "../../public/books.jpg";
+import Books from "../../public/books1.jpg";
 
 const Banner = () => {
   return (
@@ -7,17 +7,20 @@ const Banner = () => {
         <div className="w-full order-2 md:order-1 md:w-1/2 mt-12 md:mt-36">
           <div className="space-y-8">
             <h1 className="text-2xl md:text-4xl font-bold">
-              Welcome here to learn something{" "}
-              <span className="text-pink-500">new everyday!!!</span>
+              Welcome to <span className="text-pink-500">Book Worm !</span>
             </h1>
-            <p className="text-sm md:text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            <h3 className="text-xl md:text-2xl font-bold">
+              Discover your next great{" "}
+              <span className="text-pink-500">read.</span>
+            </h3>
+
+            <p className="text-sm md:text-xl text-justify">
+              At Book Worm, we believe in the magic of books. Whether you are a
+              lifelong reader or just starting your literary journey, you will
+              find a world of stories waiting for you. Explore our vast
+              collection of genres, from timeless classics to the latest
+              bestsellers, and find your next favorite book. Happy reading!
             </p>
 
             <label className="input input-bordered flex items-center gap-2">
@@ -33,7 +36,9 @@ const Banner = () => {
               <input type="text" className="grow" placeholder="Email" />
             </label>
           </div>
-          <button className="btn mt-6 btn-secondary">Get Started</button>
+          <button className="btn mt-6 bg-pink-500  hover:bg-pink-700 btn-secondary">
+            Get Started
+          </button>
         </div>
         <div className="order-1 w-full mt-20 md:w-1/2">
           <img

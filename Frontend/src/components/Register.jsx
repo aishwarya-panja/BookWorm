@@ -40,7 +40,7 @@ const Register = () => {
 
   return (
     <>
-      <div className="flex h-screen items-center justify-center">
+      <div className="flex h-screen items-center justify-center bg-pink-200">
         <div className="w-[600px]">
           <div className="modal-box">
             <form onSubmit={handleSubmit(onSubmit)} method="dialog">

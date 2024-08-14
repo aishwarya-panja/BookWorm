@@ -16,7 +16,7 @@ const FreeBook = () => {
         console.log(data);
         setBook(data);
       } catch (error) {
-        console.log(error);
+        console.log("Error fetching books:", error);
       }
     };
     getBook();
@@ -24,11 +24,11 @@ const FreeBook = () => {
 
   var settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
-    initialSlide: 0,
+    //initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
@@ -44,7 +44,7 @@ const FreeBook = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
+          //initialSlide: 2
         },
       },
       {
@@ -61,15 +61,14 @@ const FreeBook = () => {
     <>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
         <div>
-          <h1 className="font semibold text-xl pb-2">Free Offered Courses</h1>
+          <h3 className="text-2xl md:text-4xl font-bold" >Free Featured Books of the Month</h3>
+          <br />
+          <br />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Check out our handpicked selection of must-read books this month.
+            From captivating novels to insightful non-fiction, these titles have
+            been chosen to offer you the best in literature. Dive into these top
+            picks and enrich your reading experience.
           </p>
         </div>
 
